@@ -91,14 +91,7 @@ a:hover {
     border-color: transparent;
 }
 
-@media screen and (max-width: 1200px) {
 
-    .cursor,
-    .cursor2,
-    .cursor3 {
-        display: none
-    }
-}
 
 /* #Primary style
  ================================================== */
@@ -137,11 +130,7 @@ a:hover {
     font-weight: 700;
 }
 
-@media screen and (max-width: 580px) {
-    .hero-section .dancing {
-        font-size: 18px;
-    }
-}
+
 
 .hero-section p {
     font-size: 15px;
@@ -439,19 +428,6 @@ body.contact-on .contact-section {
     color: #866BAF;
 }
 
-@media screen and (max-width: 580px) {
-    .contact-section a {
-        font-size: 17px;
-    }
-
-    .contact-section .social a {
-        margin-left: 3px;
-        margin-right: 3px;
-        font-size: 13px;
-        letter-spacing: 0;
-    }
-}
-
 .Skills-section,
 .Projects-section,
 .nature-section {
@@ -688,4 +664,63 @@ body.nature-on .nature-section {
 .teams .carousel .card .box .project:hover {
     color: white;
     background: crimson;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .cursor,
+    .cursor2,
+    .cursor3 {
+        display: none
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .teams .carousel .card img {
+        height: 250px;
+        width: 250px;
+    }
+    .teams .carousel .card:hover img {
+        background-color: white;
+        width: 100%;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .hero-section .dancing {
+        font-size: 18px;
+    }
+
+    .contact-section a {
+        font-size: 17px;
+    }
+
+    .contact-section .social a {
+        margin-left: 3px;
+        margin-right: 3px;
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+
+    .contact-text {
+        top: 25%;
+    }
+
+    .about-text {
+        top: 75%;
+    }
+
+    .teams .carousel .card img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .teams .carousel .card:hover img {
+        background-color: white;
+        width: 100%;
+        font-size: 25px;
+        height: 100%;
+    }
+
 }
