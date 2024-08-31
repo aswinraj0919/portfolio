@@ -37,9 +37,7 @@ const aboutClose = document.querySelector('.about-close');
 const contactClose = document.querySelector('.contact-close');
 const SkillsClose = document.querySelector('.Skills-close');
 const ProjectsClose = document.querySelector('.Projects-close');
-// const natureClose natureClose.addEventListener('click', () => {
-//     body.classList.remove("nature-on");
-// });= document.querySelector('.nature-close');
+// const natureClose = document.querySelector('.nature-close');
 
 const body = document.querySelector(".body");
 const SkillsHead=document.querySelector(".Skills-head")
@@ -50,7 +48,7 @@ aboutText.addEventListener('click', () => {
     if (firstClick == false) {
         new Typed(".about-me", {
             strings: ["I am 19 years young boy with dynamic and enthusiastic person,looking for the job of Web Designers and Development. A persion with firm belief in my own abilities, and also a team player who thrives in a challenging environment and a smart worker.I have a 6 months experience as a intern at Stackup Learning-Hub.Am Well-versed in numerous programming languages including C programming , C++ , HTML5 , CSS , Bootstrap5 , JavaScript , MySQL , MongoDB , Python , Django framework and a full passionate for the field."],
-            typeSpeed: 40,
+            typeSpeed: 10,
             backSpeed: false,
             loop: false
         });
@@ -77,9 +75,7 @@ ProjectsText.addEventListener('click', () => {
 // });
 
 aboutClose.addEventListener('click', () => {
-    body.classList.remove("about-on");
-    console.log("sedxcfrvg");
-    
+    body.classList.remove("about-on");    
 });
 
 contactClose.addEventListener('click', () => {

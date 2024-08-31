@@ -591,7 +591,7 @@ body.nature-on .nature-section {
     width: 500px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid rgb(0,172,238);
     transition: all .7s ease;
 }
 
@@ -635,7 +635,7 @@ body.nature-on .nature-section {
     margin: 0 5px;
     outline: none !important;
     border-radius: 50%;
-    border: 2px solid crimson !important;
+    border: 2px solid rgb(0,172,238) !important;
     transition: all 0.3s ease;
 }
 
@@ -646,33 +646,24 @@ body.nature-on .nature-section {
 
 .owl-dot.active,
 .owl-dot:hover {
-    background: crimson !important;
+    background: rgb(0,172,238) !important;
 }
 
 .teams .carousel .card .box .project {
     display: inline-block;
-    color: crimson;
+    color: rgb(0,172,238);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid rgb(0,172,238);
     transition: 0.3s ease-in-out;
 }
 
 .teams .carousel .card .box .project:hover {
     color: white;
-    background: crimson;
-}
-
-@media screen and (max-width: 1200px) {
-
-    .cursor,
-    .cursor2,
-    .cursor3 {
-        display: none
-    }
+    background: rgb(0,172,238);
 }
 
 @media screen and (max-width: 960px) {
@@ -680,6 +671,7 @@ body.nature-on .nature-section {
         height: 250px;
         width: 250px;
     }
+
     .teams .carousel .card:hover img {
         background-color: white;
         width: 100%;
@@ -702,7 +694,8 @@ body.nature-on .nature-section {
         font-size: 13px;
         letter-spacing: 0;
     }
-    .contact-section{
+
+    .contact-section {
         transform: translateX(-100%);
 
     }
@@ -738,8 +731,9 @@ body.nature-on .nature-section {
     padding-left: 2%;
     height: auto;
     overflow: none;
-  }
-  .skillbar {
+}
+
+.skillbar {
     position: relative;
     display: block;
     margin-bottom: 15px;
@@ -759,9 +753,9 @@ body.nature-on .nature-section {
     -ms-transition-property: width, background-color;
     -o-transition-property: width, background-color;
     transition-property: width, background-color;
-  }
-  
-  .skillbar-title {
+}
+
+.skillbar-title {
     position: absolute;
     top: 0;
     left: 0;
@@ -776,9 +770,9 @@ body.nature-on .nature-section {
     -moz-border-radius-bottomleft: 3px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-  }
-  
-  .skillbar-title span {
+}
+
+.skillbar-title span {
     display: block;
     background: rgba(0, 0, 0, 0.15);
     padding: 0 20px;
@@ -790,17 +784,17 @@ body.nature-on .nature-section {
     -moz-border-radius-bottomleft: 3px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-  }
-  
-  .skillbar-bar {
+}
+
+.skillbar-bar {
     height: 30px;
     width: 0px;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
-  }
-  
-  .skill-bar-percent {
+}
+
+.skill-bar-percent {
     position: absolute;
     right: 10px;
     top: 0;
@@ -808,26 +802,122 @@ body.nature-on .nature-section {
     height: 30px;
     line-height: 30px;
     color: black;
-  }
-  .Skills-head h1{
+}
+
+.Skills-head h1 {
     font-weight: 800;
-  }
-  .words{
+}
+
+.words {
     color: white;
     text-align: center;
-  }
+}
 
-  .Skills-head {
+.Skills-head p {
+    margin: 20px;
+}
+
+.Skills-head {
     position: fixed;
     top: -150px;
-    left: 0; 
+    left: 100%;
     transition: all .3s ease-in-out;
     opacity: 0;
     width: 100%;
 }
+
 .Skills-head.Skills-head-on {
     top: 110px;
-    left: 0; 
+    left: 0;
     transition: all 1s ease-in-out;
     opacity: 1;
 }
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-12{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .btn-12 span {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn-12 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-12:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
