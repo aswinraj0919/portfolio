@@ -823,6 +823,7 @@ body.nature-on .nature-section {
     left: 0; 
     transition: all .3s ease-in-out;
     opacity: 0;
+    width: 100%;
 }
 .Skills-head.Skills-head-on {
     top: 110px;
