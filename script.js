@@ -61,14 +61,14 @@ SkillsText.addEventListener('click', () => {
     body.classList.add("Skills-on");
     $(".skillbar").each(function () {
         $(this)
-          .find(".skillbar-bar")
-          .animate(
-            {
-              width: $(this).attr("data-percent")
-            },
-            2500
-          );
-      });
+            .find(".skillbar-bar")
+            .animate(
+                {
+                    width: $(this).attr("data-percent")
+                },
+                2500
+            );
+    });
 });
 
 ProjectsText.addEventListener('click', () => {
@@ -105,4 +105,3 @@ new Typed(".typing", {
     backSpeed: 60,
     loop: true
 });
-
