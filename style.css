@@ -733,7 +733,7 @@ body.nature-on .nature-section {
 
 .container-skillbar {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 150px;
     padding-right: 2%;
     padding-left: 2%;
     height: auto;
@@ -807,8 +807,26 @@ body.nature-on .nature-section {
     font-size: 11px;
     height: 30px;
     line-height: 30px;
-    color: #ffffff;
-    color: rgba(0, 0, 0, 0.5);
+    color: black;
   }
-  
-  
+  .Skills-head h1{
+    font-weight: 800;
+  }
+  .words{
+    color: white;
+    text-align: center;
+  }
+
+  .Skills-head {
+    position: fixed;
+    top: -150px;
+    left: 0; 
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+.Skills-head.Skills-head-on {
+    top: 110px;
+    left: 0; 
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}

@@ -38,13 +38,16 @@ const contactClose = document.querySelector('.contact-close');
 const SkillsClose = document.querySelector('.Skills-close');
 const ProjectsClose = document.querySelector('.Projects-close');
 const natureClose = document.querySelector('.nature-close');
+
 const body = document.querySelector(".body");
+const SkillsHead=document.querySelector(".Skills-head")
+
 let firstClick = false;
 aboutText.addEventListener('click', () => {
     body.classList.add("about-on");
     if (firstClick == false) {
         new Typed(".about-me", {
-            strings: ["I am 19 years young boy with dynamic and enthusiastic person,looking for the job of Web Designers and Development. A persion with firm belief in my own abilities, and also a team player who thrives in a challenging environment and a smart worker.I have a 6 months experience as a intern at Stackup Learning-Hub.Am Well-versed in numerous programming languages including C programming,C++,HTML5,CSS,Bootstrap5,JavaScript,MySQL,MongoDB,Python,Django framework and a full passionate for the field."],
+            strings: ["I am 19 years young boy with dynamic and enthusiastic person,looking for the job of Web Designers and Development. A persion with firm belief in my own abilities, and also a team player who thrives in a challenging environment and a smart worker.I have a 6 months experience as a intern at Stackup Learning-Hub.Am Well-versed in numerous programming languages including C programming , C++ , HTML5 , CSS , Bootstrap5 , JavaScript , MySQL , MongoDB , Python , Django framework and a full passionate for the field."],
             typeSpeed: 40,
             backSpeed: false,
             loop: false
@@ -59,6 +62,7 @@ contactText.addEventListener('click', () => {
 
 SkillsText.addEventListener('click', () => {
     body.classList.add("Skills-on");
+    SkillsHead.classList.add("Skills-head-on");
     animateSkillBars();
 });
 
@@ -80,6 +84,7 @@ contactClose.addEventListener('click', () => {
 
 SkillsClose.addEventListener('click', () => {
     body.classList.remove("Skills-on");
+    SkillsHead.classList.remove("Skills-head-on");
 });
 
 ProjectsClose.addEventListener('click', () => {
