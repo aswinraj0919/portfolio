@@ -59,16 +59,7 @@ contactText.addEventListener('click', () => {
 
 SkillsText.addEventListener('click', () => {
     body.classList.add("Skills-on");
-    $(".skillbar").each(function () {
-        $(this)
-            .find(".skillbar-bar")
-            .animate(
-                {
-                    width: $(this).attr("data-percent")
-                },
-                2500
-            );
-    });
+    animateSkillBars();
 });
 
 ProjectsText.addEventListener('click', () => {
@@ -105,3 +96,40 @@ new Typed(".typing", {
     backSpeed: 60,
     loop: true
 });
+
+function animateSkillBars() {
+    // Select all elements with the class "skillbar"
+    const skillBars = document.querySelectorAll('.skillbar');
+    
+    // Loop through each skillbar element
+    skillBars.forEach(skillbar => {
+        // Get the skillbar-bar inside the current skillbar
+        const skillbarBar = skillbar.querySelector('.skillbar-bar');
+        
+        // Get the data-percent attribute value for width
+        const width = skillbar.getAttribute('data-percent');
+        
+        // Animate the width using setInterval
+        let startWidth = 0; // Start at 0%
+        const duration = 2500; // Duration of animation in milliseconds
+        const stepTime = 10; // Time step in milliseconds
+        const step = (parseInt(width) / duration) * stepTime; // Calculate the width step
+
+        // Increment the width gradually
+        const interval = setInterval(() => {
+            startWidth += step; // Increase width by step amount
+            
+            // Set the current width
+            skillbarBar.style.width = startWidth + '%';
+            
+            // Stop animation when the desired width is reached
+            if (startWidth >= parseInt(width)) {
+                skillbarBar.style.width = width; // Set final width
+                clearInterval(interval); // Stop the interval
+            }
+        }, stepTime);
+    });
+}
+
+// Run the animation function on page load
+window.onload = animateSkillBars;
