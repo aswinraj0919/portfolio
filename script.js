@@ -47,7 +47,7 @@ aboutText.addEventListener('click', () => {
     body.classList.add("about-on");
     if (firstClick == false) {
         new Typed(".about-me", {
-            strings: ["I am 19 years young boy with dynamic and enthusiastic person,looking for the job of Web Designers and Development. A persion with firm belief in my own abilities, and also a team player who thrives in a challenging environment and a smart worker.I have a 6 months experience as a intern at Stackup Learning-Hub.Am Well-versed in numerous programming languages including C programming , C++ , HTML5 , CSS , Bootstrap5 , JavaScript , MySQL , MongoDB , Python , Django framework and a full passionate for the field."],
+            strings: ["I am a python developer with dynamic and enthusiastic person,looking for the job of Web Designers and Development. A person with firm belief in my own abilities, and also a team player who thrives in a challenging environment and a smart worker.I have a 6 months experience as a intern at Stackup Learning-Hub.Am Well-versed in numerous programming languages including C programming , C++ , HTML5 , CSS , Bootstrap5 , JavaScript , MySQL , MongoDB , Python , Django framework and a full passionate for the field."],
             typeSpeed: 10,
             backSpeed: false,
             loop: false
