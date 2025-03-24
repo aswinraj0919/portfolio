@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', handleResponsiveChanges);
     
     // Keyboard accessibility
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', (e) => { 
         if (e.key === 'Escape') {
             body.classList.remove("about-on", "contact-on", "skills-on", "projects-on");
         }
