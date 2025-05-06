@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.add("about-on");
         if (!aboutTyped) {
             new Typed(".about-me", {
-                strings: ["I am a python developer with dynamic and enthusiastic person, looking for the job of Web Designers and Development. A person with firm belief in my own abilities, and also a team player who thrives in a challenging environment and a smart worker. I have a 6 months experience as an intern at Stackup Learning-Hub. I'm well-versed in numerous programming languages including C programming, C++, HTML5, CSS, Bootstrap5, JavaScript, MySQL, MongoDB, Python, Django framework and have a full passion for the field."],
+                strings: ["I am a Software developer with dynamic and enthusiastic person, looking for the job of Web Designers and Development. A person with firm belief in my own abilities, and also a team player who thrives in a challenging environment and a smart worker. I have a 1 years experience as an software developer intern at Stackup Learning-Hub and as a software developer for 3 monts on Doctosmart. I'm well-versed in numerous programming languages including C programming, C++, HTML5, CSS, Bootstrap5, JavaScript, MySQL, MongoDB, Python, Django framework ,React.js ,figma  and have a full passion for the field."],
                 typeSpeed: 10,
                 backSpeed: false,
                 loop: false,
